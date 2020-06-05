@@ -10,7 +10,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
   "SELECT Projects.title, Pledges.amount
   FROM Pledges
   INNER JOIN Projects ON Pledges.project_id = Projects.id
-  GROUP BY Projects.title
+  # GROUP BY Projects.title
   ORDER BY Projects.title ASC;"
 end
 
